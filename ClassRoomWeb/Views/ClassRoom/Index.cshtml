@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ClassRoomWeb.Models.ClassRoomModel>
+
+@{
+    ViewData["Title"] = "Classroom list";
+}
+
+<h1>Classroom list</h1>
+
+<p>
+    <a asp-action="Create">Create New</a> | 
+    @Html.ActionLink("Register Teacher","Create", "Teacher") 
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.classRoomId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.classRoomName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.classRoomDiscription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.classRoomSubject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.createAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.classRoomId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.classRoomName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.classRoomDiscription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.classRoomSubject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.createAt)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.classRoomId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.classRoomId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.classRoomId })
+            </td>
+        </tr>
+}
+        <br/>
+    </tbody>
+</table>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ClassRoomWeb.Models.TeacherModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teacher List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.teacherId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teacherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teacherTel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subjectTaught)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.teacherId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.teacherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.teacherTel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subjectTaught)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.teacherId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.teacherId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

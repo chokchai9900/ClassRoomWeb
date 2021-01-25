@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdgbh9oktSkSTDD7cFBD60wAAAAACAAAAAAAQZgAAAAEAACAAAACuoZVsMPTjZF/+DK5y1sWmsZRWScb2yZrMl+A35/oTpgAAAAAOgAAAAAIAACAAAABQGMq7XWSIiftnCjalvPOJOp9DwPAHgRfG4NHoiuZqlTAAAADUqUFZSAtA6oIji9IpMEEffkPGe4Dzep8le/FGwaoWXOW2MY8o0+HnBJKxLrClYwtAAAAARKUeqaPZNt2UxmDeS6pPQf3/dDyxMPqftDale89cfCylslvseqooXADBzcVMK7vtlqX+oiEAfckT1gi1paq5dA==</EncryptedPassword>
+    <_PublishTargetUrl>ftp://files.000webhost.com/public_html</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>01/23/2021 12:51:18</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>01/23/2021 12:51:18</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.deps.json">
+      <publishTime>01/24/2021 18:08:24</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.dll">
+      <publishTime>01/24/2021 18:08:23</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.exe">
+      <publishTime>01/24/2021 18:08:23</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.pdb">
+      <publishTime>01/24/2021 18:08:23</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.runtimeconfig.json">
+      <publishTime>01/24/2021 18:03:22</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.Views.dll">
+      <publishTime>01/24/2021 18:08:24</publishTime>
+    </File>
+    <File Include="ClassRoomWeb.Views.pdb">
+      <publishTime>01/24/2021 18:08:24</publishTime>
+    </File>
+    <File Include="DnsClient.dll">
+      <publishTime>03/31/2020 21:28:56</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>08/03/2020 18:30:10</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>11/16/2019 06:08:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

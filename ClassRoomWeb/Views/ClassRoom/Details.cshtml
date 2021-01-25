@@ -1,0 +1,131 @@
+﻿@model ClassRoomWeb.Models.ClassRoomModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4> @Html.DisplayFor(model => model.classRoomName)</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.classRoomId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.classRoomId)
+        </dd>
+
+        <dd class="col-sm-2">
+            Qr code
+        </dd>
+        <dt class="col-sm-10">
+            <img src="@ViewBag.QRCodeImage" />
+        </dt>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.classRoomDiscription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.classRoomDiscription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.classRoomSubject)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.classRoomSubject)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.createAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.createAt)
+        </dd>
+    </dl>
+    
+    
+    
+    <h4>@Html.DisplayNameFor(it => it.classTeacher)</h4>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Teacher Name
+                </th>
+                <th>
+                    Teacher Tel.
+                </th>
+                <th>
+                    Subject
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.classTeacher)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.teacherId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.teacherName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.teacherTel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.subjectTaught)
+                    </td>
+                </tr>
+            }
+            <br />
+        </tbody>
+    </table>
+
+
+
+     <h4>@Html.DisplayNameFor(it => it.classStudent)</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Student Id
+                </th>
+                <th>
+                    Student Name
+                </th>
+                <th>
+                    Check-In Time
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.classStudent)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.studentId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.studentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.checkInAt)
+                    </td>
+                </tr>
+            }
+            <br />
+        </tbody>
+    </table>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.classRoomId }) |
+    @Html.ActionLink("Check In", "checkIn", new { id = Model.classRoomId }) |
+    <a asp-action="Index">Back to List</a>
+
+
+</div>
