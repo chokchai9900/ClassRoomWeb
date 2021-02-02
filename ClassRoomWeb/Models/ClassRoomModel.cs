@@ -10,31 +10,38 @@ namespace ClassRoomWeb.Models
     public class ClassRoomModel
     {
         [BsonId]
-        [Display(Name = "ClassRoom Id")]
+        [Display(Name = "รหัสห้องเรียน")]
         public string classRoomId { get; set; }
 
         [BsonElement("classRoomName")]
-        [Display(Name = "Name")]
+        //[Required]
+        [StringLength(100)]
+        [Display(Name = "ชื่อห้อง")]
         public string classRoomName { get; set; }
 
         [BsonElement("classRoomDiscription")]
-        [Display(Name = "Discription")]
+        //[Required]
+        [StringLength(5000)]
+        [Display(Name = "รายละเอียดห้องเรียน")]
         public string classRoomDiscription { get; set; }
 
         [BsonElement("classRoomSubject")]
-        [Display(Name = "Subject")]
+        //[Required]
+        [StringLength(5000)]
+        [Display(Name = "วิชาเรียน")]
         public string classRoomSubject { get; set; }
 
         [BsonElement("createAt")]
-        [Display(Name = "Create At")]
+        [Display(Name = "ถูกสร้างขึ้นเมื่อ")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy hh:mm tt}")]
         public DateTime createAt { get; set; }
 
         [BsonElement("classStudent")]
-        [Display(Name = "Student in Class")]
+        [Display(Name = "นักเรียนในห้องเรียน")]
         public List<StudentModel> classStudent { get; set; }
 
         [BsonElement("classTeacher")]
-        [Display(Name = "Teacher in Class")]
+        [Display(Name = "อาจารย์ที่อยู๋ในห้องเรียน")]
         public List<TeacherModel> classTeacher { get; set; }
     }
 }

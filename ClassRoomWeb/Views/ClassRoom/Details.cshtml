@@ -4,7 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>รายละเอียด</h1>
 
 <div>
     <h4> @Html.DisplayFor(model => model.classRoomName)</h4>
@@ -52,13 +52,13 @@
         <thead>
             <tr>
                 <th>
-                    Teacher Name
+                    ชื่อครูผู้สอน
                 </th>
                 <th>
-                    Teacher Tel.
+                    เบอร์โทรศัพท์
                 </th>
                 <th>
-                    Subject
+                    วิชา
                 </th>
                 <th></th>
             </tr>
@@ -92,13 +92,13 @@
         <thead>
             <tr>
                 <th>
-                    Student Id
+                    รหัสนักศึกษา
                 </th>
                 <th>
-                    Student Name
+                    ชื่อนักศึกษา
                 </th>
                 <th>
-                    Check-In Time
+                    เวลาที่เช็คชื่อ
                 </th>
                 <th></th>
             </tr>
@@ -125,7 +125,7 @@
 <div>
     @Html.ActionLink("Edit", "Edit", new { id = Model.classRoomId }) |
     @Html.ActionLink("Check In", "checkIn", new { id = Model.classRoomId }) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">กลับไปยังหน้ารายชื่อ</a>
 
 
 </div>

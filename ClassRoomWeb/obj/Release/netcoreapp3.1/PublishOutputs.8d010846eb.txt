@@ -1,4 +1,5 @@
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\PubTmp\Out\ClassRoomWeb.exe
+C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\BG.png
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\site.css
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\js\site.js

@@ -23,13 +23,29 @@ namespace ClassRoomWeb.Controllers
         // GET: ClassRoomController
         public ActionResult Index()
         {
-            return View(ClassRoomservice.GetClassRoom());
+            var culture = new System.Globalization.CultureInfo("th-TH", true);
+
+            var data = ClassRoomservice.GetClassRoom().ToList();
+
+            foreach (var item in data)
+            {
+                var time = item.createAt;
+                item.createAt = item.createAt.AddHours(7.00);
+            }
+
+            return View(data);
+        }
+
+        // GET: ClassRoomController
+        public ActionResult Result()
+        {
+            return View();
         }
 
         // GET: ClassRoomController/Details/5
         public ActionResult Details(string id)
         {
-            var qrcodeText = $"localhost:44325{Request.Path.Value}" ;
+            var qrcodeText = $"thefreehost.azurewebsites.net/ClassRoom/checkIn/{id}" ;
             if (id == null)
             {
                 return NotFound();
@@ -39,6 +55,13 @@ namespace ClassRoomWeb.Controllers
             if (data == null)
             {
                 return NotFound();
+            }
+            data.createAt = data.createAt.AddHours(7.00);
+
+            foreach (var items in data.classStudent)
+            {
+                var time = items.checkInAt;
+                items.checkInAt = items.checkInAt.AddHours(7.00);
             }
 
             var options = new QrCodeEncodingOptions
@@ -91,7 +114,7 @@ namespace ClassRoomWeb.Controllers
                 {
                     ClassRoomservice.AddStudentInClassByClassRoomIdAsync(id, std);
                 }
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Result");
             }
             else
             {

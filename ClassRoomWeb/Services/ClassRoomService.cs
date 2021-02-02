@@ -26,7 +26,10 @@ namespace ClassRoomWeb.Services
 
         public void AddStudentInClassByClassRoomIdAsync(string classId, StudentModel std)
         {
-            std.checkInAt = DateTime.Now;
+            var currectDatetime = DateTime.Now;
+            var culture = new System.Globalization.CultureInfo("th-TH", true);
+            var dateNow = Convert.ToDateTime(currectDatetime, culture);
+            std.checkInAt = dateNow;
             if (std == null || classId == null)
             {
                 throw new ArgumentNullException("data");
@@ -61,6 +64,10 @@ namespace ClassRoomWeb.Services
         }
         public ClassRoomModel CreateClassRoom(ClassRoomModel classroom)
         {
+            var currectDatetime = DateTime.UtcNow;
+            var culture = new System.Globalization.CultureInfo("th-TH", true);
+            var dateNow = Convert.ToDateTime(currectDatetime, culture);
+
             var dateNumber = ($"{DateTime.Now.Millisecond.ToString()}{DateTime.Now.TimeOfDay.ToString()}");
             var splitString = dateNumber.Split(":");
             string uniqueNumber = "";
@@ -76,7 +83,7 @@ namespace ClassRoomWeb.Services
                 classRoomSubject = classroom.classRoomSubject,
                 classStudent = new List<StudentModel>(),
                 classTeacher = new List<TeacherModel>(),
-                createAt = DateTime.Now
+                createAt = dateNow
             };
             ConnectClassRoomCollection.InsertOne(newRoom);
             return newRoom;

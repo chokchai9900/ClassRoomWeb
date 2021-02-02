@@ -10,19 +10,25 @@ namespace ClassRoomWeb.Models
     public class TeacherModel
     {
         [BsonId]
-        [Display(Name = "Teacher Id")]
+        [Display(Name = "รหัสอาจารย์")]
         public string teacherId { get; set; }
 
         [BsonElement("teacherName")]
-        [Display(Name = "Name")]
+        [Required]
+        [StringLength(100)]
+        [Display(Name = "ชื่ออาจารย์")]
         public string teacherName { get; set; }
 
         [BsonElement("teacherTel")]
-        [Display(Name = "Tel.")]
+        [Required]
+        [Phone]
+        [Display(Name = "เบอร์โทรศัพท์อาจารย์")]
         public string teacherTel { get; set; }
 
         [BsonElement("subjectTaught")]
-        [Display(Name = "Subject")]
+        [Required]
+        [StringLength(100)]
+        [Display(Name = "รายวิชาที่รับผิดชอบ")]
         public string subjectTaught { get; set; }
     }
 }

@@ -97,7 +97,6 @@ C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\bin\Release\netcoreap
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\bin\Release\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\ClassRoomWeb.csprojAssemblyReference.cache
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\ClassRoomWeb.AssemblyInfoInputs.cache
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\ClassRoomWeb.AssemblyInfo.cs
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\ClassRoomWeb.csproj.CoreCompileInputs.cache
@@ -116,6 +115,7 @@ C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreap
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\ClassRoom\Details.cshtml.g.cs
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\ClassRoom\Edit.cshtml.g.cs
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\ClassRoom\Index.cshtml.g.cs
+C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\ClassRoom\Result.cshtml.g.cs
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\BloodRainz\source\repos\ClassRoomWeb\ClassRoomWeb\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs

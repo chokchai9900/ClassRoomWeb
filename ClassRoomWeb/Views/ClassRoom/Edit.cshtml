@@ -4,9 +4,8 @@
 ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>แก้ไข</h1>
 
-<h4>ClassRoomModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -28,19 +27,24 @@ ViewData["Title"] = "Edit";
                 <span asp-validation-for="classRoomSubject" class="text-danger"></span>
             </div>
 
+            <label class="control-label">For add teacher(Only Registered)</label>
+
             <div class="form-group">
                 <label class="control-label">Teacher id</label>
                 <input class="form-control" name="idTeacher" id="idTeacher" />
                 <span class="text-danger"></span>
             </div>
+
+            <label class="control-label">For add student</label>
+
             <div class="form-group">
                 <label class="control-label">Student id</label>
                 <input class="form-control" name="idStudent" id="idStudent" />
                 <span class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Student id</label>
-                <input class="form-control" name="nameStudent" id="nameStudent" />
+                <label class="control-label">Student name</label>
+                <input class="form-control" name="nameStudent" id="nameStudent" placeholder="Enter student name" />
                 <span class="text-danger"></span>
             </div>
 
@@ -52,7 +56,7 @@ ViewData["Title"] = "Edit";
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">กลับไปยังหน้ารายชื่อ</a>
 </div>
 
 @section Scripts {

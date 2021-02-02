@@ -6,10 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Artboard 1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
     <PackageReference Include="MongoDB.Driver" Version="2.12.0-beta1" />
     <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
     <PackageReference Include="ZXing.Net" Version="0.16.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wwwroot\Artboard 1.png" />
   </ItemGroup>
 
 </Project>
